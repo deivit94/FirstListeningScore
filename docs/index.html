@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listening Score</title>
+    <title>FCE Test Scores</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Listening Score</h1>
+    
     <main>
-        <div class="main-div">
-            <div class="title-div">
-                <p class="title">Practice<br />test score</p>
-                <p class="title">Cambridge English<br />Scale score</p>
-                <p class="title lasttitle">CEFR level</p>    
+        <div class="listening-div">
+            <h1>Score</h1>
+            <div class="main-div">
+                <div class="title-div">
+                    <p class="title">Practice<br />test score</p>
+                    <p class="title">Cambridge English<br />Scale score</p>
+                    <p class="title lasttitle">CEFR level</p>    
+                </div>
+                <div class="numbers-div">
+                    <input onkeypress="pressEnter(event)" autocomplete="off" type="text" class="numbersitem input" id="input">
+                    <p class="numbersitem p-text" id="score"></p>
+                    <p class="numbersitem p-text" id="level"></Canvas></p>
+                </div>
+                <div class="button-div">
+                    <button onclick="calcularValor()" class="button">Calcular valor</button>
+                </div>    
             </div>
-            <div class="numbers-div">
-                <input onkeypress="pressEnter(event)" autocomplete="off" type="text" class="numbersitem input" id="input">
-                <p class="numbersitem p-text" id="score"></p>
-                <p class="numbersitem p-text" id="level"></Canvas></p>
-            </div>
-            <button onclick="calcularValor()" id="button" class="button">Calcular valor</button>
         </div>
+        <div class="UseOfEnglish-div">
+            <h1 style="color: #f58e7c;">Use Of English</h1>
+            <div class="main-div" style="background-color: #f58e7c;">
+                <div class="title-div">
+                    <p class="title">Practice<br />test score</p>
+                    <p class="title">Cambridge English<br />Scale score</p>
+                    <p class="title lasttitle">CEFR level</p>    
+                </div>
+                <div class="numbers-div">
+                    <input onkeypress="pressEnterDos(event)" autocomplete="off" type="text" class="numbersitem input" id="inputDos">
+                    <p class="numbersitem p-text" id="scoreDos"></p>
+                    <p class="numbersitem p-text" id="levelDos"></Canvas></p>
+                </div>
+                <div class="button-div">
+                    <button onclick="calcularValorDos()" class="button">Calcular valor</button>
+                </div>    
+            </div>
+        </div>      
     </main>
 </body>
 <script src="app.js"></script>
