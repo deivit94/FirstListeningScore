@@ -1,0 +1,90 @@
+*{
+    /* border: 1px solid tomato; */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    margin-top: 70px;
+}
+
+h1 {
+    color: plum;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 80px;
+}
+main {
+    display: flex;
+    justify-content: center;   
+}
+
+.main-div {
+    background-color: plum;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+.title-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.lasttitle {
+    padding-top: 10px;
+}
+
+.numbers-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+}
+
+.numbersitem {
+    width: 100%;
+    height: 100%;
+}
+
+#score, #level {
+    display: block;
+    margin: 0px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.input {
+    font-size: 20px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 120px;
+    width: 60%;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: grey;
+}
+
+.p-text {
+    font-size: 20px;
+}
