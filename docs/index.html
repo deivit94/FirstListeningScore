@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <p class="titulo-principal">B2 First and B2 First for Schools</p>
     <main>
         <div class="listening-div">
             <h1>Listening</h1>
@@ -61,6 +61,24 @@
                 </div>
                 <div class="button-div">
                     <button onclick="calcularValorTres()" class="button">Calcular valor</button>
+                </div>    
+            </div>
+        </div>
+        <div class="writing-div">
+            <h1 style="color: #bdecb6;">Writing</h1>
+            <div class="main-div" style="background-color: #bdecb6;">
+                <div class="title-div">
+                    <p class="title">Practice<br />test score</p>
+                    <p class="title">Cambridge English<br />Scale score</p>
+                    <p class="title lasttitle">CEFR level</p>    
+                </div>
+                <div class="numbers-div">
+                    <input onkeypress="pressEnterCuatro(event)" autocomplete="off" type="text" class="numbersitem input" id="inputCuatro">
+                    <p class="numbersitem p-text" id="scoreCuatro"></p>
+                    <p class="numbersitem p-text" id="levelCuatro"></p>
+                </div>
+                <div class="button-div">
+                    <button onclick="calcularValorCuatro()" class="button">Calcular valor</button>
                 </div>    
             </div>
         </div>      

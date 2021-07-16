@@ -8,15 +8,28 @@ body {
     background-color: black;
 }
 
+.titulo-principal {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
 h1 {
     color: plum;
     text-decoration: underline;
     text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
 }
 main {
+    height: 90vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-content: space-around;
 }
 
 .main-div {
@@ -76,6 +89,13 @@ main {
     text-align: center;
 }
 
+#scoreCuatro, #levelCuatro {
+    display: block;
+    margin: 0px;
+    margin-top: 3px;
+    text-align: center;
+}
+
 .input {
     font-size: 20px;
 }
@@ -105,3 +125,28 @@ main {
     font-size: 20px;
 }
 
+@media (max-width: 900px) {
+    main {
+        height: 90vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: unset;
+        align-content: unset;
+        align-items: center;
+    }
+    .main-div {
+        width: 80vw;
+        height: 40vh;
+        border-radius: 10px;
+        padding-top: 15px;
+    }
+    h1 {
+        margin-top: 60px;
+    }
+    .button {
+        margin-top: 30px;
+        width: 50%;
+        height: 60px;
+        font-size: 20px;
+    }
+}
