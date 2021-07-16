@@ -244,3 +244,88 @@ function pressEnterDos(e) {
         } 
     }
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+function calcularValorTres(){
+    const nu = document.getElementById('inputTres').value;
+    const scoreTres = document.getElementById('scoreTres')
+    const levelTres = document.getElementById('levelTres')
+
+    if (nu == 42) {
+        scoreTres.innerHTML = '190'
+        levelTres.innerHTML = 'Level C1'
+    } else if (nu <= 41 & nu >= 38) {
+        scoreTres.innerHTML = Math.round(((nu-37)*(10/5)) + 180);
+        levelTres.innerHTML = 'Level C1'
+    } else if (nu == 37) {
+        scoreTres.innerHTML = '180'
+        levelTres.innerHTML = 'Level C1'
+    } else if (nu <= 36 & nu >= 25) {
+        scoreTres.innerHTML = Math.round(((nu-24)*(20/13)) + 160);
+        levelTres.innerHTML = 'Level B2'
+    } else if (nu == 24) {
+        scoreTres.innerHTML = '160'
+        levelTres.innerHTML = 'Level B2'
+    } else if (nu <= 23 & nu >= 17) {
+        scoreTres.innerHTML = Math.round(((nu-16)*(20/8)) + 140);
+        levelTres.innerHTML = 'Level B1'
+    } else if (nu == 16) {
+        scoreTres.innerHTML = '140'
+        levelTres.innerHTML = 'Level B1'
+    } else if (nu <= 15 & nu >= 11) {
+        scoreTres.innerHTML = Math.round(((nu-10)*(18/6)) + 122);
+        levelTres.innerHTML = '----'
+    } else if (nu <= 10 & nu > 0) {
+        scoreTres.innerHTML = '122*'
+        levelTres.innerHTML = '----'
+    } else {
+        scoreTres.innerHTML = 'error'
+        levelTres.innerHTML = 'error'
+    }
+}
+
+////////////////////////////////////////////////////
+
+function pressEnterTres(e) {
+    
+    const nu = document.getElementById('inputTres').value;
+    const scoreTres = document.getElementById('scoreTres')
+    const levelTres = document.getElementById('levelTres')    
+    
+    if (e.key == "Enter"){
+        
+        if (nu == 42) {
+            scoreTres.innerHTML = '190'
+            levelTres.innerHTML = 'Level C1'
+        } else if (nu <= 41 & nu >= 38) {
+            scoreTres.innerHTML = Math.round(((nu-37)*(10/5)) + 180);
+            levelTres.innerHTML = 'Level C1'
+        } else if (nu == 37) {
+            scoreTres.innerHTML = '180'
+            levelTres.innerHTML = 'Level C1'
+        } else if (nu <= 36 & nu >= 25) {
+            scoreTres.innerHTML = Math.round(((nu-24)*(20/13)) + 160);
+            levelTres.innerHTML = 'Level B2'
+        } else if (nu == 24) {
+            scoreTres.innerHTML = '160'
+            levelTres.innerHTML = 'Level B2'
+        } else if (nu <= 23 & nu >= 17) {
+            scoreTres.innerHTML = Math.round(((nu-16)*(20/8)) + 140);
+            levelTres.innerHTML = 'Level B1'
+        } else if (nu == 16) {
+            scoreTres.innerHTML = '140'
+            levelTres.innerHTML = 'Level B1'
+        } else if (nu <= 15 & nu >= 11) {
+            scoreTres.innerHTML = Math.round(((nu-10)*(18/6)) + 122);
+            levelTres.innerHTML = '----'
+        } else if (nu <= 10 & nu > 0) {
+            scoreTres.innerHTML = '122*'
+            levelTres.innerHTML = '----'
+        } else {
+            scoreTres.innerHTML = 'error'
+            levelTres.innerHTML = 'error'
+        }
+    }
+} 

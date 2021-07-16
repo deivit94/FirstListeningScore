@@ -69,6 +69,13 @@ main {
     text-align: center;
 }
 
+#scoreTres, #levelTres {
+    display: block;
+    margin: 0px;
+    margin-top: 3px;
+    text-align: center;
+}
+
 .input {
     font-size: 20px;
 }
