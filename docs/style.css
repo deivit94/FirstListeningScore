@@ -150,4 +150,10 @@ main {
         height: 60px;
         font-size: 20px;
     }
+    .firstitle {
+        padding-top: 10px;
+    }
+    .lasttitle {
+        padding-top: 20px;
+    }
 }
