@@ -198,7 +198,7 @@ function calcularValorDos() {
         scoreDos.innerHTML = '122*';
         levelDos.innerHTML = "----";
     } else {
-        scoreDos.innerHTML = 'erorr';
+        scoreDos.innerHTML = 'error';
         levelDos.innerHTML = "error";
     } 
 }
@@ -239,7 +239,7 @@ function pressEnterDos(e) {
             scoreDos.innerHTML = '122*';
             levelDos.innerHTML = "----";
         } else {
-            scoreDos.innerHTML = 'erorr';
+            scoreDos.innerHTML = 'error';
             levelDos.innerHTML = "error";
         } 
     }
