@@ -329,3 +329,86 @@ function pressEnterTres(e) {
         }
     }
 } 
+
+//////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+
+function calcularValorCuatro() {
+    const num = document.getElementById('inputCuatro').value;
+    const scoreCuatro = document.getElementById('scoreCuatro')
+    const levelCuatro = document.getElementById('levelCuatro')
+    
+    if (num == 40){
+        scoreCuatro.innerHTML = '190'
+        levelCuatro.innerHTML = 'Level C1'
+    } else if (num <= 39 & num >= 35) {
+        scoreCuatro.innerHTML = Math.round(((num-34)*(10/6)) + 180);
+        levelCuatro.innerHTML = 'Level C1'
+    } else if (num == 34) {
+        scoreCuatro.innerHTML = '180'
+        levelCuatro.innerHTML = 'Level C1'
+    } else if (num <= 33 & num >= 25) {
+        scoreCuatro.innerHTML = Math.round(((num-24)*(20/10)) + 160);
+        levelCuatro.innerHTML = 'Level B2'
+    } else if (num == 24) {
+        scoreCuatro.innerHTML = '160'
+        levelCuatro.innerHTML = 'Level B2'
+    } else if (num <= 23 & num >= 17) {
+        scoreCuatro.innerHTML = Math.round(((num-16)*(20/8)) + 140);
+        levelCuatro.innerHTML = 'Level B1'
+    } else if (num == 16) {
+        scoreCuatro.innerHTML = '140'
+        levelCuatro.innerHTML = 'Level B1'
+    } else if (num <=15 & num >= 11) {
+        scoreCuatro.innerHTML = Math.round(((num-10)*(18/6)) + 122);
+        levelCuatro.innerHTML = '----'
+    } else if (num <= 10 & num > 0) {
+        scoreCuatro.innerHTML = '122*'
+        levelCuatro.innerHTML = '----'
+    } else {
+        scoreCuatro.innerHTML = 'error'
+        levelCuatro.innerHTML = 'error'
+    }
+}
+
+/////////////////////////////////////////////////////
+
+function pressEnterCuatro(e) {
+    const num = document.getElementById('inputCuatro').value;
+    const scoreCuatro = document.getElementById('scoreCuatro')
+    const levelCuatro = document.getElementById('levelCuatro')
+
+    if (e.key == "Enter") {
+        if (num == 40){
+            scoreCuatro.innerHTML = '190'
+            levelCuatro.innerHTML = 'Level C1'
+        } else if (num <= 39 & num >= 35) {
+            scoreCuatro.innerHTML = Math.round(((num-34)*(10/6)) + 180);
+            levelCuatro.innerHTML = 'Level C1'
+        } else if (num == 34) {
+            scoreCuatro.innerHTML = '180'
+            levelCuatro.innerHTML = 'Level C1'
+        } else if (num <= 33 & num >= 25) {
+            scoreCuatro.innerHTML = Math.round(((num-24)*(20/10)) + 160);
+            levelCuatro.innerHTML = 'Level B2'
+        } else if (num == 24) {
+            scoreCuatro.innerHTML = '160'
+            levelCuatro.innerHTML = 'Level B2'
+        } else if (num <= 23 & num >= 17) {
+            scoreCuatro.innerHTML = Math.round(((num-16)*(20/8)) + 140);
+            levelCuatro.innerHTML = 'Level B1'
+        } else if (num == 16) {
+            scoreCuatro.innerHTML = '140'
+            levelCuatro.innerHTML = 'Level B1'
+        } else if (num <=15 & num >= 11) {
+            scoreCuatro.innerHTML = Math.round(((num-10)*(18/6)) + 122);
+            levelCuatro.innerHTML = '----'
+        } else if (num <= 10 & num > 0) {
+            scoreCuatro.innerHTML = '122*'
+            levelCuatro.innerHTML = '----'
+        } else {
+            scoreCuatro.innerHTML = 'error'
+            levelCuatro.innerHTML = 'error'
+        }
+    }
+}
